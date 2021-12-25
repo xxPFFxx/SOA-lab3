@@ -1,6 +1,8 @@
 package com.soa;
 
 import com.soa.controllers.HumanBeingController;
+import com.soa.exceptions.BadRequestMapper;
+import com.soa.exceptions.NotFoundMapper;
 import com.soa.filter.CorsFilter;
 
 import javax.ws.rs.ApplicationPath;
@@ -15,6 +17,8 @@ public class CallerApplication extends Application {
         Set<Class<?>> resources = new HashSet<>();
         resources.add(HumanBeingController.class);
         resources.add(CorsFilter.class);
+        resources.add(BadRequestMapper.class);
+        resources.add(NotFoundMapper.class);
         return resources;
     }
 

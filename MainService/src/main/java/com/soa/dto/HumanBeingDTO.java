@@ -21,4 +21,5 @@ public class HumanBeingDTO {
     private String weaponType;
     private String mood;
     private CarDTO car;
+    private TeamDTO team;
 }
