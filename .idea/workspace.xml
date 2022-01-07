@@ -9,21 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="/team/{team-id}/make-depressive works correctly">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" afterDir="false" />
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="small fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/lib/javaee-web-api-8.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/CallerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/lib/hibernate-validator-5.2.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/CallerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MainService/target/MainService/META-INF/MANIFEST.MF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MainService/src/main/webapp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -96,20 +97,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\resources\keystore" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecuritySertificates" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\exception" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp\WEB-INF\static" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.pff.secondservice.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecondServiceApplication">
+  <component name="RunManager" selected="GlassFish Server.Payara">
     <configuration name="Payara" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.2021.10" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="https://localhost:51510/MainService/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -183,7 +185,7 @@
       </method>
     </configuration>
     <configuration name="Jetty 9.4.44.v20210927" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.4.44.v20210927" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:51510/MainService/" />
+      <option name="OPEN_IN_BROWSER_URL" value="https://localhost:51510/MainService/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MainService:war">
@@ -975,7 +977,7 @@
       <workItem from="1641316880525" duration="1000" />
       <workItem from="1641537791719" duration="2423000" />
       <workItem from="1641542543090" duration="9905000" />
-      <workItem from="1641563443679" duration="805000" />
+      <workItem from="1641563443679" duration="10891000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1005,7 +1007,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641553669358</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="small fixes">
+      <created>1641564523425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641564523425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1028,7 +1037,8 @@
     <MESSAGE value="Second Service" />
     <MESSAGE value="Second Service works with https" />
     <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="/team/{team-id}/remove-without-toothpick works correctly" />
+    <MESSAGE value="small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -64,5 +64,15 @@ public class HumanBeingController{
         humanBeingService.deleteHumanBeing(id);
     }
 
+    @OPTIONS
+    public Response options(){
+        return Response.ok().build();
+    }
+
+    @OPTIONS
+    @Path("{id}")
+    public Response optionsWithId(){
+        return Response.ok().build();
+    }
 
 }
