@@ -56,8 +56,8 @@ public class HumanBeing {
     @NotNull(message = "car must be not Null value")
     private Car car; //Поле не может быть null
 
-    @ManyToOne(optional = false, cascade =  CascadeType.ALL)
-    @JoinColumn(name="team_id", nullable=false)
+    @ManyToOne(cascade =  CascadeType.ALL)
+    @JoinColumn(name="team_id")
     private Team team;
 
     public HumanBeing(String name, Coordinates coordinates, Boolean realHero, boolean hasToothpick, Float impactSpeed,

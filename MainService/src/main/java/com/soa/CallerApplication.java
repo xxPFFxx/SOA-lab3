@@ -1,5 +1,6 @@
 package com.soa;
 
+import com.soa.controllers.AdditionalTasksController;
 import com.soa.controllers.HumanBeingController;
 import com.soa.exceptions.BadRequestMapper;
 import com.soa.exceptions.NotFoundMapper;
@@ -16,6 +17,7 @@ public class CallerApplication extends Application {
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new HashSet<>();
         resources.add(HumanBeingController.class);
+        resources.add(AdditionalTasksController.class);
         resources.add(CorsFilter.class);
         resources.add(BadRequestMapper.class);
         resources.add(NotFoundMapper.class);
