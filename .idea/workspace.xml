@@ -9,28 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="Second Service works with https">
-      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/TeamMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="/team/{team-id}/remove-without-toothpick works correctly">
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService.war" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -996,7 +980,7 @@
       <workItem from="1640753521994" duration="411000" />
       <workItem from="1641316880525" duration="1000" />
       <workItem from="1641537791719" duration="2423000" />
-      <workItem from="1641542543090" duration="9486000" />
+      <workItem from="1641542543090" duration="9905000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1019,7 +1003,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641539046825</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="/team/{team-id}/remove-without-toothpick works correctly">
+      <created>1641553669358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641553669358</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1041,7 +1032,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Second Service" />
     <MESSAGE value="Second Service works with https" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Service works with https" />
+    <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="/team/{team-id}/remove-without-toothpick works correctly" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

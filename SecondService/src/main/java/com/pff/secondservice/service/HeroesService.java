@@ -3,6 +3,7 @@ package com.pff.secondservice.service;
 import com.pff.secondservice.client.RestClient;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
+import com.pff.secondservice.enums.Mood;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +33,12 @@ public class HeroesService {
         }
     }
 
-    public void makeDepressive(Integer teamId){
-
+    public void makeDepressive(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
+        List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();
+        for (HumanBeingDTO humanBeing : humanBeingDTOList){
+            humanBeing.setMood(String.valueOf(Mood.SORROW));
+            restClient.updateHumanBeing(humanBeing);
+        }
     }
 }

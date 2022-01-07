@@ -37,7 +37,7 @@ public class HeroesController {
     }
 
     @GetMapping("/team/{team-id}/make-depressive")
-    public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Integer teamId){
+    public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         heroesService.makeDepressive(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }
