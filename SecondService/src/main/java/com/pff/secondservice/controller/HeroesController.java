@@ -1,6 +1,5 @@
 package com.pff.secondservice.controller;
 
-import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.service.HeroesService;
 import org.springframework.http.HttpStatus;
@@ -32,10 +31,9 @@ public class HeroesController {
     }
 
     @GetMapping("/team/{team-id}/remove-without-toothpick")
-    public HumanBeingDTOList removeWithoutToothpick(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-//        heroesService.removeWithoutToothpick(teamId);
-//        return new ResponseEntity(HttpStatus.OK);
-        return heroesService.removeWithoutToothpick(teamId);
+    public ResponseEntity<?> removeWithoutToothpick(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        heroesService.removeWithoutToothpick(teamId);
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @GetMapping("/team/{team-id}/make-depressive")

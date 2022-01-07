@@ -31,6 +31,14 @@ public class HumanBeingController{
         return new HumanBeingDTOList((humanBeingMapper.mapHumanBeingListToHumanBeingDTOList(pagedHumanBeingList.getHumanBeingList())), pagedHumanBeingList.getCount());
     }
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{id}")
+    public HumanBeingDTO getHumanBeing(@PathParam("id") int id) throws IOException {
+        HumanBeing humanBeing = humanBeingService.getHumanBeing(id);
+        return humanBeingMapper.mapHumanBeingToHumanBeingDTO(humanBeing);
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

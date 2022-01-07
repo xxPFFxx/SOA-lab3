@@ -92,4 +92,9 @@ public class HumanBeingService {
         PagedHumanBeingList pagedHumanBeingList = repository.findAll(perPage, curPage, sortBy, filterBy);
         return pagedHumanBeingList;
     }
+
+    //TODO на несуществующую сущность кидает 500 ошибку
+    public HumanBeing getHumanBeing(Integer id){
+        return (repository.findById(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
+    }
 }

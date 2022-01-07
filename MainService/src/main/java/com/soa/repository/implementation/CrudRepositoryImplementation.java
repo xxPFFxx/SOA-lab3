@@ -278,6 +278,9 @@ public class CrudRepositoryImplementation<T> implements CrudRepository<T> {
                         case ("car"):
                             predicates.add(criteriaBuilder.equal(from.get("car").get("name"), filter.get(1)));
                             break;
+                        case ("teamId"):
+                            predicates.add(criteriaBuilder.equal(from.get("team").get("id"), Long.parseLong(filter.get(1))));
+                            break;
                         default:
                             throw new BadRequestException("Bad format of com.soa.filter: no such field " + filter.get(0));
                     }

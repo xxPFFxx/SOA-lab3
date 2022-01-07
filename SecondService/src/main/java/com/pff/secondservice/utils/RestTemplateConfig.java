@@ -5,6 +5,10 @@ package com.pff.secondservice.utils;
 //import org.apache.http.impl.client.CloseableHttpClient;
 //import org.apache.http.impl.client.HttpClients;
 //import org.apache.http.ssl.SSLContextBuilder;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.ssl.SSLContextBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -27,6 +31,7 @@ import java.security.cert.CertificateException;
 
 @Component
 public class RestTemplateConfig {
+    // TODO переместить их в application.properties
     String dirToSertificates = "C:\\Users\\Daniil\\IdeaProjects\\SOA-lab2\\SecuritySertificates\\";
 
     String customTrustStore = "payaratospringtruststore.jks";
@@ -35,17 +40,16 @@ public class RestTemplateConfig {
 
 
     public RestTemplate restTemplate() throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-//        SSLContext sslContext = SSLContextBuilder.create()
-//                .loadTrustMaterial(new File(dirToSertificates + customTrustStore),
-//                        customTrustStorePassword.toCharArray())
-//                .build();
-//        CloseableHttpClient httpClient = HttpClients.custom()
-//                .setSSLContext(sslContext)
-//                .setSSLHostnameVerifier(NoopHostnameVerifier.INSTANCE)
-//                .build();
-//        HttpComponentsClientHttpRequestFactory customRequestFactory = new HttpComponentsClientHttpRequestFactory();
-//        customRequestFactory.setHttpClient(httpClient);
-//        return new RestTemplate(customRequestFactory);
-        return new RestTemplate();
+        SSLContext sslContext = SSLContextBuilder.create()
+                .loadTrustMaterial(new File(dirToSertificates + customTrustStore),
+                        customTrustStorePassword.toCharArray())
+                .build();
+        CloseableHttpClient httpClient = HttpClients.custom()
+                .setSSLContext(sslContext)
+                .setSSLHostnameVerifier(NoopHostnameVerifier.INSTANCE)
+                .build();
+        HttpComponentsClientHttpRequestFactory customRequestFactory = new HttpComponentsClientHttpRequestFactory();
+        customRequestFactory.setHttpClient(httpClient);
+        return new RestTemplate(customRequestFactory);
     }
 }

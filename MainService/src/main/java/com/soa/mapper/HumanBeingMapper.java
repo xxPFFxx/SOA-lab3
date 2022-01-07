@@ -11,10 +11,12 @@ import java.util.List;
 public class HumanBeingMapper {
     private CoordinatesMapper coordinatesMapper;
     private CarMapper carMapper;
+    private TeamMapper teamMapper;
 
     public HumanBeingMapper() {
         coordinatesMapper = new CoordinatesMapper();
         carMapper = new CarMapper();
+        teamMapper = new TeamMapper();
     }
 
     public HumanBeing mapHumanBeingDTOToHumanBeing(HumanBeingDTO humanBeingDTO) {
@@ -30,6 +32,12 @@ public class HumanBeingMapper {
             humanBeing.setWeaponType(FieldValidationUtil.getWeaponTypeValue(humanBeingDTO.getWeaponType()));
             humanBeing.setMood(FieldValidationUtil.getMoodValue(humanBeingDTO.getMood()));
             humanBeing.setCar(carMapper.mapCarDTOToCar(humanBeingDTO.getCar()));
+            if (humanBeingDTO.getTeam() == null){
+                humanBeing.setTeam(null);
+            }
+            else {
+                humanBeing.setTeam(teamMapper.mapTeamDTOtoTeam(humanBeingDTO.getTeam()));
+            }
             return humanBeing;
         } catch (NullPointerException e) {
             throw new BadRequestException("Bad format of JSON body");
@@ -50,6 +58,7 @@ public class HumanBeingMapper {
         humanBeingDTO.setWeaponType(String.valueOf(humanBeing.getWeaponType()));
         humanBeingDTO.setMood(String.valueOf(humanBeing.getMood()));
         humanBeingDTO.setCar(carMapper.mapCarToCarDTO(humanBeing.getCar()));
+        humanBeingDTO.setTeam(teamMapper.mapTeamToTeamDTO(humanBeing.getTeam()));
         return humanBeingDTO;
     }
 
