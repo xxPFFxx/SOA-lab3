@@ -58,7 +58,12 @@ public class HumanBeingMapper {
         humanBeingDTO.setWeaponType(String.valueOf(humanBeing.getWeaponType()));
         humanBeingDTO.setMood(String.valueOf(humanBeing.getMood()));
         humanBeingDTO.setCar(carMapper.mapCarToCarDTO(humanBeing.getCar()));
-        humanBeingDTO.setTeam(teamMapper.mapTeamToTeamDTO(humanBeing.getTeam()));
+        if (humanBeing.getTeam() == null){
+            humanBeingDTO.setTeam(null);
+        }
+        else {
+            humanBeingDTO.setTeam(teamMapper.mapTeamToTeamDTO(humanBeing.getTeam()));
+        }
         return humanBeingDTO;
     }
 
