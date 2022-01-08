@@ -4,6 +4,7 @@ import com.pff.secondservice.client.RestClient;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.enums.Mood;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +20,10 @@ public class HeroesService {
 
     private final RestClient restClient;
 
-    public HeroesService(){
-        this.restClient = new RestClient();
+    public HeroesService(RestClient restClient) {
+        this.restClient = restClient;
     }
+
     public void removeWithoutToothpick(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
         List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();

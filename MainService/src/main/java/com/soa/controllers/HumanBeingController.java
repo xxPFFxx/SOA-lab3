@@ -42,7 +42,7 @@ public class HumanBeingController{
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response createHumanBeing(HumanBeingDTO humanBeingDTO) throws IOException {
+    public Response createHumanBeing(@Valid HumanBeingDTO humanBeingDTO) throws IOException {
         HumanBeing humanBeing = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
         humanBeingService.saveHumanBeing(humanBeing);
         return Response.ok().build();

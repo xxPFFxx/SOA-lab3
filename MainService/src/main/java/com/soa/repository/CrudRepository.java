@@ -2,6 +2,7 @@ package com.soa.repository;
 
 
 import org.hibernate.Session;
+import org.postgresql.util.PSQLException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaQuery;
@@ -15,7 +16,7 @@ public interface CrudRepository<T> {
 
     T update(T coordinates);
 
-    void save(T coordinates);
+    void save(T coordinates) throws PSQLException;
 
     void deleteById(Integer id);
 

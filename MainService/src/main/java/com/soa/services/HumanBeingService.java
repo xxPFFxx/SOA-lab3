@@ -9,6 +9,7 @@ import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 import com.soa.repository.implementation.CrudRepositoryImplementation;
 import com.soa.validation.EntityValidator;
+import org.postgresql.util.PSQLException;
 
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletResponse;
@@ -95,6 +96,11 @@ public class HumanBeingService {
 
     //TODO на несуществующую сущность кидает 500 ошибку
     public HumanBeing getHumanBeing(Integer id){
-        return (repository.findById(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
+        try {
+            return (repository.findById(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
+        }catch (NoResultException e){
+            throw new NotFoundException("humanBeing with id = " + id + " does not exist");
+        }
+
     }
 }

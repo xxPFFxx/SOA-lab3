@@ -2,28 +2,38 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="MainService:war" />
+      <artifact name="SecondService:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="small fixes">
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="All methods from React works correctly">
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MainService_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/CallerApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/lib/hibernate-validator-5.2.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/CallerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +102,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34207076" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -104,6 +114,8 @@
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp\resources" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp\WEB-INF\static" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
     </key>
@@ -182,6 +194,20 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="MainService:war" />
         </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Jetty 9.4.44.v20210927" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.4.44.v20210927" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -961,6 +987,9 @@
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="" />
@@ -977,7 +1006,9 @@
       <workItem from="1641316880525" duration="1000" />
       <workItem from="1641537791719" duration="2423000" />
       <workItem from="1641542543090" duration="9905000" />
-      <workItem from="1641563443679" duration="10891000" />
+      <workItem from="1641563443679" duration="18423000" />
+      <workItem from="1641625338754" duration="4594000" />
+      <workItem from="1641638806149" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1014,7 +1045,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641564523425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All methods from React works correctly">
+      <created>1641580106614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641580106614</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1038,7 +1076,8 @@
     <MESSAGE value="Second Service works with https" />
     <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="All methods from React works correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="All methods from React works correctly" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

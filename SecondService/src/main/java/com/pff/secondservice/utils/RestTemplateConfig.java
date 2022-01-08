@@ -32,14 +32,22 @@ import java.security.cert.CertificateException;
 @Component
 public class RestTemplateConfig {
     // TODO переместить их в application.properties
-    String dirToSertificates = "C:\\Users\\Daniil\\IdeaProjects\\SOA-lab2\\SecuritySertificates\\";
 
-    String customTrustStore = "payaratospringtruststore.jks";
+    private final String dirToSertificates;
+    private final String customTrustStore;
+    private final String customTrustStorePassword;
 
-    String customTrustStorePassword = "soasoa";
-
+    @Autowired
+    public RestTemplateConfig(@Value("${soaspring.dir-to-sertificates}") String dirToSertificates,
+                              @Value("${soaspring.custom-trust-store}") String customTrustStore,
+                              @Value("${soaspring.custom-trust-store-password}") String customTrustStorePassword) {
+        this.dirToSertificates = dirToSertificates;
+        this.customTrustStore = customTrustStore;
+        this.customTrustStorePassword = customTrustStorePassword;
+    }
 
     public RestTemplate restTemplate() throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        System.out.println(dirToSertificates + " " + customTrustStore + " " + customTrustStorePassword);
         SSLContext sslContext = SSLContextBuilder.create()
                 .loadTrustMaterial(new File(dirToSertificates + customTrustStore),
                         customTrustStorePassword.toCharArray())
