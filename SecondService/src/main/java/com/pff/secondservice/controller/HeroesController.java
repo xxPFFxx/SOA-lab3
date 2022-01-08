@@ -1,6 +1,5 @@
 package com.pff.secondservice.controller;
 
-import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.service.HeroesService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import com.soa.repository.CrudRepository;
 import com.soa.util.HibernateUtil;
-import org.postgresql.util.PSQLException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
@@ -344,8 +343,5 @@ public class CrudRepositoryImplementation<T> implements CrudRepository<T> {
         return sessionFactory.openSession();
     }
 
-    public void clearEntityManager() {
-        em.clear();
-    }
 
 }

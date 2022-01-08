@@ -1,8 +1,6 @@
 package com.soa.controllers;
 
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.soa.dto.CountDTO;
 import com.soa.dto.PagedHumanBeingList;
 import com.soa.dto.dtoList.HumanBeingDTOList;
@@ -25,13 +23,11 @@ import java.util.List;
 public class AdditionalTasksController {
     private Session session;
     private EntityManager em;
-    private Gson gson;
     private HumanBeingMapper humanBeingMapper;
 
     public AdditionalTasksController() {
         session = HibernateUtil.getSessionFactory().openSession();
         em = session.getEntityManagerFactory().createEntityManager();
-        gson = new GsonBuilder().setPrettyPrinting().create();
         humanBeingMapper = new HumanBeingMapper();
     }
 

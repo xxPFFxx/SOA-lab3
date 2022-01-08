@@ -3,7 +3,6 @@ package com.pff.secondservice.client;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.utils.RestTemplateConfig;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

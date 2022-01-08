@@ -5,8 +5,6 @@ import com.soa.models.Coordinates;
 import com.soa.util.FieldValidationUtil;
 
 import javax.ws.rs.BadRequestException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CoordinatesMapper {
 
@@ -31,11 +29,4 @@ public class CoordinatesMapper {
         return coordinatesDTO;
     }
 
-    public List<CoordinatesDTO> mapCoordinatesListToCoordinatesDTOList(List<Coordinates> coordinatesList) {
-        ArrayList<CoordinatesDTO> coordinatesDTOList = new ArrayList<>();
-        for (Coordinates coordinates : coordinatesList) {
-            coordinatesDTOList.add(mapCoordinatesToCoordinatesDTO(coordinates));
-        }
-        return coordinatesDTOList;
-    }
 }

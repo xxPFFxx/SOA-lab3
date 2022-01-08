@@ -5,8 +5,6 @@ import com.soa.models.Car;
 import com.soa.util.FieldValidationUtil;
 
 import javax.ws.rs.BadRequestException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CarMapper {
     public Car mapCarDTOToCar(CarDTO carDTO) {
@@ -29,11 +27,4 @@ public class CarMapper {
         return carDTO;
     }
 
-    public List<CarDTO> mapCarListToCarDTOList(List<Car> carList) {
-        ArrayList<CarDTO> carDTOList = new ArrayList<>();
-        for (Car car : carList) {
-            carDTOList.add(mapCarToCarDTO(car));
-        }
-        return carDTOList;
-    }
 }

@@ -9,32 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="All methods from React works correctly">
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MainService_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" afterDir="false" />
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="added report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MainService/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -107,11 +97,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\resources\keystore" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecuritySertificates" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
@@ -1008,7 +998,7 @@
       <workItem from="1641542543090" duration="9905000" />
       <workItem from="1641563443679" duration="18423000" />
       <workItem from="1641625338754" duration="4594000" />
-      <workItem from="1641638806149" duration="5222000" />
+      <workItem from="1641638806149" duration="10209000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1052,7 +1042,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641580106614</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moved jks variables to application.properties">
+      <created>1641648093662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641648093662</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added report">
+      <created>1641651230451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641651230451</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1077,7 +1081,9 @@
     <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="All methods from React works correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="All methods from React works correctly" />
+    <MESSAGE value="Moved jks variables to application.properties" />
+    <MESSAGE value="added report" />
+    <option name="LAST_COMMIT_MESSAGE" value="added report" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

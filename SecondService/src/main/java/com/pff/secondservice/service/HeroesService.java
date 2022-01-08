@@ -4,8 +4,6 @@ import com.pff.secondservice.client.RestClient;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.enums.Mood;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
