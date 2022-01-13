@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SecondService:war" />
+      <artifact name="MainService:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="added report">
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="small fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/CallerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +33,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -184,20 +184,6 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="MainService:war" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Jetty 9.4.44.v20210927" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.4.44.v20210927" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -998,7 +984,10 @@
       <workItem from="1641542543090" duration="9905000" />
       <workItem from="1641563443679" duration="18423000" />
       <workItem from="1641625338754" duration="4594000" />
-      <workItem from="1641638806149" duration="10209000" />
+      <workItem from="1641638806149" duration="10499000" />
+      <workItem from="1641826682157" duration="623000" />
+      <workItem from="1641999813855" duration="2354000" />
+      <workItem from="1642077850959" duration="2903000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1056,7 +1045,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641651230451</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="small fixes">
+      <created>1641655000143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641655000143</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1079,11 +1075,11 @@
     <MESSAGE value="Second Service" />
     <MESSAGE value="Second Service works with https" />
     <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
-    <MESSAGE value="small fixes" />
     <MESSAGE value="All methods from React works correctly" />
     <MESSAGE value="Moved jks variables to application.properties" />
     <MESSAGE value="added report" />
-    <option name="LAST_COMMIT_MESSAGE" value="added report" />
+    <MESSAGE value="small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

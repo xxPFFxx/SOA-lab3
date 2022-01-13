@@ -56,7 +56,7 @@ public class HumanBeing {
     @NotNull(message = "car must be not Null value")
     private Car car; //Поле не может быть null
 
-    @ManyToOne(cascade =  CascadeType.ALL)
+    @ManyToOne(cascade =  CascadeType.MERGE)
     @JoinColumn(name="team_id")
     private Team team;
 
