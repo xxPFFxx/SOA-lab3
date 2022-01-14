@@ -13,4 +13,5 @@ public class SpringConfigurationProperties {
     private String dirToSertificates;
     private String customTrustStore;
     private String customTrustStorePassword;
+    private String apiServiceUrl;
 }
