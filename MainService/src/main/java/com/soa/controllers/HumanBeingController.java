@@ -34,7 +34,7 @@ public class HumanBeingController{
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public HumanBeingDTO getHumanBeing(@PathParam("id") int id) throws IOException {
+    public HumanBeingDTO getHumanBeing(@PathParam("id") long id) throws IOException {
         HumanBeing humanBeing = humanBeingService.getHumanBeing(id);
         return humanBeingMapper.mapHumanBeingToHumanBeingDTO(humanBeing);
     }
@@ -52,7 +52,7 @@ public class HumanBeingController{
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public Response updateHumanBeing(@PathParam("id") int id, @Valid HumanBeingDTO humanBeingDTO) throws IOException {
+    public Response updateHumanBeing(@PathParam("id") long id, @Valid HumanBeingDTO humanBeingDTO) throws IOException {
         HumanBeing humanBeing = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
         humanBeingService.updateHumanBeing(humanBeing, id);
         return Response.ok().build();
@@ -60,7 +60,7 @@ public class HumanBeingController{
 
     @DELETE
     @Path("{id}")
-    public void deleteHumanBeing(@PathParam("id") int id) throws IOException {
+    public void deleteHumanBeing(@PathParam("id") long id) throws IOException {
         humanBeingService.deleteHumanBeing(id);
     }
 
