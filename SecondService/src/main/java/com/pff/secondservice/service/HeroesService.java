@@ -4,6 +4,7 @@ import com.pff.secondservice.client.RestClient;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.enums.Mood;
+import com.pff.secondservice.exception.BadRequestException;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -25,6 +26,9 @@ public class HeroesService {
     public void removeWithoutToothpick(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
         List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();
+        if (humanBeingDTOList.isEmpty()){
+            throw new BadRequestException("No team with teamId " + teamId + " or this team has zero members");
+        }
         for (HumanBeingDTO humanBeing : humanBeingDTOList){
             if (humanBeing.getHasToothpick().equals("false")){
                 humanBeing.setTeam(null);
@@ -36,6 +40,9 @@ public class HeroesService {
     public void makeDepressive(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
         List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();
+        if (humanBeingDTOList.isEmpty()){
+            throw new BadRequestException("No team with teamId " + teamId + " or this team has zero members");
+        }
         for (HumanBeingDTO humanBeing : humanBeingDTOList){
             humanBeing.setMood(String.valueOf(Mood.SORROW));
             restClient.updateHumanBeing(humanBeing);

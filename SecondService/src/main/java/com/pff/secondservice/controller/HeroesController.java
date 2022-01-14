@@ -1,5 +1,7 @@
 package com.pff.secondservice.controller;
 
+import com.pff.secondservice.exception.BadRequestException;
+import com.pff.secondservice.exception.NotFoundException;
 import com.pff.secondservice.service.HeroesService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -29,15 +31,31 @@ public class HeroesController {
         return "Hello from Spring Boot";
     }
 
-    @GetMapping("/team/{team-id}/remove-without-toothpick")
+    @PostMapping("/team/{team-id}/remove-without-toothpick")
     public ResponseEntity<?> removeWithoutToothpick(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         heroesService.removeWithoutToothpick(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @GetMapping("/team/{team-id}/make-depressive")
+    @PostMapping("/team/{team-id}/make-depressive")
     public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         heroesService.makeDepressive(teamId);
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @ExceptionHandler(BadRequestException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseEntity<String> handleBadRequestException(BadRequestException e){
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(e.getMessage());
+    }
+
+    @ExceptionHandler(NotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<String> handleNotFoundException(NotFoundException e){
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(e.getMessage());
     }
 }

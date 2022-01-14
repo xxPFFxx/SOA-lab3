@@ -39,7 +39,7 @@
         <location>/BadRequestMapper</location>
     </error-page>
     <error-page>
-        <exception-type>javax.servlet.ServletException</exception-type>
-        <location>/ServletExceptionMapper</location>
+        <exception-type>org.glassfish.jersey.server.ParamException</exception-type>
+        <location>/ParamExceptionMapper</location>
     </error-page>
 </web-app>
