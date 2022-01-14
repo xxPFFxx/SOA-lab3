@@ -290,8 +290,14 @@ public class HumanBeingDAO {
             session.update(humanBeing);
             transaction.commit();
         } catch (Exception e){
-            if (transaction != null) transaction.rollback();
-            throw e;
+            if (transaction != null) {
+                try{
+                    transaction.rollback();
+                }catch (Exception ee){
+                    throw new BadRequestException("Bad format of JSON body");
+                }
+            }
+            throw new BadRequestException("Bad format of JSON body");
         }
     }
 
@@ -303,8 +309,14 @@ public class HumanBeingDAO {
             transaction.commit();
             return id;
         } catch (Exception e){
-            if (transaction != null) transaction.rollback();
-            throw e;
+            if (transaction != null) {
+                try{
+                    transaction.rollback();
+                }catch (Exception ee){
+                    throw new BadRequestException("Bad format of JSON body");
+                }
+            }
+            throw new BadRequestException("Bad format of JSON body");
         }
     }
 

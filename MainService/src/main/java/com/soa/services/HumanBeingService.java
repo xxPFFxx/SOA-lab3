@@ -1,9 +1,13 @@
 package com.soa.services;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import com.soa.dao.HumanBeingDAO;
 import com.soa.dao.TeamDAO;
+import com.soa.dto.HumanBeingDTO;
 import com.soa.dto.PagedHumanBeingList;
+import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 import com.soa.models.Team;
 
@@ -12,22 +16,29 @@ import javax.ws.rs.BadRequestException;
 import javax.ws.rs.NotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 public class HumanBeingService {
 
-    private HumanBeingDAO humanBeingDAO;
-    private TeamDAO teamDAO;
+    private final HumanBeingDAO humanBeingDAO;
+    private final TeamDAO teamDAO;
+    private final Gson gson;
+    private final HumanBeingMapper humanBeingMapper;
 
     public HumanBeingService(){
         humanBeingDAO = new HumanBeingDAO();
         teamDAO = new TeamDAO();
+        gson = new GsonBuilder().setPrettyPrinting().create();
+        humanBeingMapper = new HumanBeingMapper();
     }
 
-    public void updateHumanBeing(HumanBeing humanBeingToUpdate, Long id) throws IOException {
+    public void updateHumanBeing(String humanBeingRequest, Long id) throws IOException {
         try {
             if (id != null) {
                 try {
+                    HumanBeingDTO humanBeingDTO = gson.fromJson(humanBeingRequest, HumanBeingDTO.class);
+                    HumanBeing humanBeingToUpdate = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
                     Optional<HumanBeing> humanBeing = humanBeingDAO.getHumanBeing(id);
                     humanBeingToUpdate.setCreationDate(humanBeing.get().getCreationDate());
                     humanBeingToUpdate.setId(id.longValue());
@@ -44,17 +55,19 @@ public class HumanBeingService {
                     humanBeingDAO.updateHumanBeing(humanBeingToUpdate);
                 } catch (NumberFormatException e) {
                     throw new BadRequestException("Bad format of id: " + id + ", should be natural number (1,2,...)");
-                } catch (NoResultException e) {
+                } catch (NoResultException | NoSuchElementException e) {
                     throw new NotFoundException("No HumanBeing with id " + id);
                 }
             }
-        }catch (JsonSyntaxException | NotFoundException e){
+        }catch (JsonSyntaxException e){
             throw new NotFoundException("Bad syntax of JSON body");
         }
     }
 
-    public void saveHumanBeing(HumanBeing humanBeingToPersist){
+    public void saveHumanBeing(String humanBeing){
         try {
+            HumanBeingDTO humanBeingDTO = gson.fromJson(humanBeing, HumanBeingDTO.class);
+            HumanBeing humanBeingToPersist = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
             List<Team> teams = teamDAO.findAll();
             Team teamToUpdate = null;
             for (Team team : teams){
@@ -66,7 +79,7 @@ public class HumanBeingService {
                 humanBeingToPersist.setTeam(teamToUpdate);
             }
             humanBeingDAO.createHumanBeing(humanBeingToPersist);
-        }catch (JsonSyntaxException | NotFoundException e){
+        }catch (JsonSyntaxException e){
             throw new BadRequestException("Bad syntax of JSON body");
         }
     }

@@ -6,8 +6,8 @@ import com.soa.dto.dtoList.HumanBeingDTOList;
 import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 import com.soa.services.HumanBeingService;
+import com.soa.util.FieldValidationUtil;
 
-import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -34,16 +34,19 @@ public class HumanBeingController{
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public HumanBeingDTO getHumanBeing(@PathParam("id") long id) throws IOException {
-        HumanBeing humanBeing = humanBeingService.getHumanBeing(id);
+    public HumanBeingDTO getHumanBeing(@PathParam("id") String id) throws IOException {
+        Long long_id = FieldValidationUtil.getLongFieldValue(id);
+        if (long_id == null){
+            throw new BadRequestException("id can't be null for PUT request");
+        }
+        HumanBeing humanBeing = humanBeingService.getHumanBeing(long_id);
         return humanBeingMapper.mapHumanBeingToHumanBeingDTO(humanBeing);
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response createHumanBeing(@Valid HumanBeingDTO humanBeingDTO) throws IOException {
-        HumanBeing humanBeing = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
+    public Response createHumanBeing(String humanBeing) throws IOException {
         humanBeingService.saveHumanBeing(humanBeing);
         return Response.ok().build();
     }
@@ -52,16 +55,23 @@ public class HumanBeingController{
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public Response updateHumanBeing(@PathParam("id") long id, @Valid HumanBeingDTO humanBeingDTO) throws IOException {
-        HumanBeing humanBeing = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
-        humanBeingService.updateHumanBeing(humanBeing, id);
+    public Response updateHumanBeing(@PathParam("id") String id, String humanBeing) throws IOException {
+        Long long_id = FieldValidationUtil.getLongFieldValue(id);
+        if (long_id == null){
+            throw new BadRequestException("id can't be null for PUT request");
+        }
+        humanBeingService.updateHumanBeing(humanBeing, long_id);
         return Response.ok().build();
     }
 
     @DELETE
     @Path("{id}")
-    public void deleteHumanBeing(@PathParam("id") long id) throws IOException {
-        humanBeingService.deleteHumanBeing(id);
+    public void deleteHumanBeing(@PathParam("id") String id) throws IOException {
+        Long long_id = FieldValidationUtil.getLongFieldValue(id);
+        if (long_id == null){
+            throw new BadRequestException("id can't be null for PUT request");
+        }
+        humanBeingService.deleteHumanBeing(long_id);
     }
 
     @OPTIONS
