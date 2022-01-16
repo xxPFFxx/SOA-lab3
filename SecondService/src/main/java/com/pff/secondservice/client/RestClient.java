@@ -27,8 +27,8 @@ public class RestClient {
         this.restTemplateConfig = restTemplateConfig;
     }
 
-    public HumanBeingDTOList getHumanBeingsByTeamId(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-        return restTemplateConfig.restTemplate().getForObject(REST_URI + pathToHumanBeings + "?filterBy=teamId:" + teamId, HumanBeingDTOList.class);
+    public HumanBeingDTOList getHumanBeings() throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        return restTemplateConfig.restTemplate().getForObject(REST_URI + pathToHumanBeings, HumanBeingDTOList.class);
     }
 
     public void updateHumanBeing(HumanBeingDTO humanBeingDTO) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {

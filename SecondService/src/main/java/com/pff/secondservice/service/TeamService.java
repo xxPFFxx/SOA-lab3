@@ -4,8 +4,8 @@ import com.pff.secondservice.client.RestClient;
 import com.pff.secondservice.dto.HumanBeingDTO;
 import com.pff.secondservice.dto.dtoList.HumanBeingDTOList;
 import com.pff.secondservice.enums.Mood;
-import com.pff.secondservice.exception.BadRequestException;
 import com.pff.secondservice.exception.NotFoundException;
+import com.pff.secondservice.models.HumanBeing;
 import com.pff.secondservice.models.Team;
 import com.pff.secondservice.repository.TeamRepository;
 import org.springframework.stereotype.Service;
@@ -15,6 +15,8 @@ import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -28,28 +30,42 @@ public class TeamService {
         this.teamRepository = teamRepository;
     }
 
-    public void removeWithoutToothpick(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-        HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
-        List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();
-        if (humanBeingDTOList.isEmpty()){
-            throw new BadRequestException("No team with teamId " + teamId + " or this team has zero members");
+    public void removeWithoutToothpick(Long teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        Team team = teamRepository.findById(teamId)
+                .orElseThrow(() -> new NotFoundException("No team with id" + teamId));
+        ArrayList<String> teamMembersIds = new ArrayList<>();
+        for (HumanBeing humanBeing : team.getHumanBeings()){
+            teamMembersIds.add(String.valueOf(humanBeing.getId()));
         }
+        HumanBeingDTOList humanBeings = restClient.getHumanBeings();
+        List<HumanBeingDTO> humanBeingDTOList = humanBeings.getHumanBeingList();
         for (HumanBeingDTO humanBeing : humanBeingDTOList){
-            if (humanBeing.getHasToothpick().equals("false")){
-                humanBeing.setTeam(null);
+            if (humanBeing.getHasToothpick().equals("false") && teamMembersIds.contains(humanBeing.getId())){
+                new HashSet<>(team.getHumanBeings())
+                        .forEach(humanBeing1 -> {
+                            if (humanBeing1.getId() == Long.parseLong(humanBeing.getId())){
+                                team.removeHumanBeing(humanBeing1);
+                            }
+                        });
             }
             restClient.updateHumanBeing(humanBeing);
         }
+        teamRepository.save(team);
     }
 
-    public void makeDepressive(Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-        HumanBeingDTOList humanBeingsInTeam = restClient.getHumanBeingsByTeamId(teamId);
-        List<HumanBeingDTO> humanBeingDTOList = humanBeingsInTeam.getHumanBeingList();
-        if (humanBeingDTOList.isEmpty()){
-            throw new BadRequestException("No team with teamId " + teamId + " or this team has zero members");
+    public void makeDepressive(Long teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        Team team = teamRepository.findById(teamId)
+                .orElseThrow(() -> new NotFoundException("No team with id" + teamId));
+        ArrayList<String> teamMembersIds = new ArrayList<>();
+        for (HumanBeing humanBeing : team.getHumanBeings()){
+            teamMembersIds.add(String.valueOf(humanBeing.getId()));
         }
+        HumanBeingDTOList humanBeings = restClient.getHumanBeings();
+        List<HumanBeingDTO> humanBeingDTOList = humanBeings.getHumanBeingList();
         for (HumanBeingDTO humanBeing : humanBeingDTOList){
-            humanBeing.setMood(String.valueOf(Mood.SORROW));
+            if (teamMembersIds.contains(humanBeing.getId())){
+                humanBeing.setMood(String.valueOf(Mood.SORROW));
+            }
             restClient.updateHumanBeing(humanBeing);
         }
     }

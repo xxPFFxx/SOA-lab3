@@ -56,12 +56,8 @@ public class HumanBeing {
     @NotNull(message = "car must be not Null value")
     private Car car; //Поле не может быть null
 
-    @ManyToOne(cascade =  CascadeType.MERGE)
-    @JoinColumn(name="team_id")
-    private Team team;
-
     public HumanBeing(String name, Coordinates coordinates, Boolean realHero, boolean hasToothpick, Float impactSpeed,
-                      String soundtrackName, WeaponType weaponType, Mood mood, Car car, Team team){
+                      String soundtrackName, WeaponType weaponType, Mood mood, Car car){
         this.name = name;
         this.coordinates = coordinates;
         this.realHero = realHero;
@@ -71,6 +67,5 @@ public class HumanBeing {
         this.weaponType = weaponType;
         this.mood = mood;
         this.car = car;
-        this.team = team;
     }
 }

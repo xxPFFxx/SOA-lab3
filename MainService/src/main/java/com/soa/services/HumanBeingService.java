@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import com.soa.dao.HumanBeingDAO;
-import com.soa.dao.TeamDAO;
 import com.soa.dto.HumanBeingDTO;
 import com.soa.dto.PagedHumanBeingList;
 import com.soa.mapper.HumanBeingMapper;
@@ -20,13 +19,11 @@ import java.util.Optional;
 public class HumanBeingService {
 
     private final HumanBeingDAO humanBeingDAO;
-    private final TeamDAO teamDAO;
     private final Gson gson;
     private final HumanBeingMapper humanBeingMapper;
 
     public HumanBeingService(){
         humanBeingDAO = new HumanBeingDAO();
-        teamDAO = new TeamDAO();
         gson = new GsonBuilder().setPrettyPrinting().create();
         humanBeingMapper = new HumanBeingMapper();
     }

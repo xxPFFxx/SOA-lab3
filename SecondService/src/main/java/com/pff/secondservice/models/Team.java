@@ -34,4 +34,9 @@ public class Team {
     public Team(String name){
         this.name = name;
     }
+
+    public void removeHumanBeing(HumanBeing humanBeing){
+        humanBeings.remove(humanBeing);
+        humanBeing.setTeam(null);
+    }
 }

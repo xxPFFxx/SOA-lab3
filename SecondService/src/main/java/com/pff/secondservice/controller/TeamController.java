@@ -59,13 +59,13 @@ public class TeamController {
     }
 
     @PostMapping("/{team-id}/remove-without-toothpick")
-    public ResponseEntity<?> removeWithoutToothpick(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+    public ResponseEntity<?> removeWithoutToothpick(@PathVariable("team-id") Long teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         teamService.removeWithoutToothpick(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }
 
     @PostMapping("/{team-id}/make-depressive")
-    public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+    public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Long teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         teamService.makeDepressive(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }

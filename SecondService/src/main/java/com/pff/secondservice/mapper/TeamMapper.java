@@ -1,10 +1,9 @@
-package com.soa.mapper;
+package com.pff.secondservice.mapper;
 
-import com.soa.dto.TeamDTO;
-import com.soa.models.Team;
-import com.soa.util.FieldValidationUtil;
-
-import javax.ws.rs.BadRequestException;
+import com.pff.secondservice.dto.TeamDTO;
+import com.pff.secondservice.exception.BadRequestException;
+import com.pff.secondservice.models.Team;
+import com.pff.secondservice.utils.FieldValidationUtil;
 
 public class TeamMapper {
     public Team mapTeamDTOtoTeam(TeamDTO teamDTO) {

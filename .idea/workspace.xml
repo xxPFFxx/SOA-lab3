@@ -2,32 +2,43 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="MainService:war exploded" />
+      <artifact name="SecondService:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="small fixes">
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/NotFoundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/HumanBeing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/TeamRepository.java" afterDir="false" />
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="transferring Team to second service">
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/BadRequestAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/CarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/CoordinatesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/HumanBeingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/TeamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/FieldValidationUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/ParamExceptionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dao/HumanBeingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dao/HumanBeingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dao/TeamDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/TeamDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/TeamMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Team.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/HeroesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/HeroesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +112,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -112,11 +123,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\mapper" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\models" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
@@ -125,6 +136,8 @@
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pff.secondservice.mapper" />
+      <recent name="com.pff.secondservice.utils" />
       <recent name="com.pff.secondservice.dto" />
     </key>
   </component>
@@ -1020,7 +1033,7 @@
       <workItem from="1642138027751" duration="14810000" />
       <workItem from="1642233696884" duration="960000" />
       <workItem from="1642234910580" duration="5855000" />
-      <workItem from="1642315243149" duration="9307000" />
+      <workItem from="1642315243149" duration="17227000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1120,7 +1133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642168094175</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="transferring Team to second service">
+      <created>1642334133219</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1642334133219</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1151,7 +1171,9 @@
     <MESSAGE value="Fixed issue #3" />
     <MESSAGE value="Fixed issue #2" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="transfering Team to second service" />
+    <MESSAGE value="transferring Team to second service" />
+    <option name="LAST_COMMIT_MESSAGE" value="transferring Team to second service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

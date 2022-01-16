@@ -1,10 +1,10 @@
-package com.soa.mapper;
+package com.pff.secondservice.mapper;
 
-import com.soa.dto.HumanBeingDTO;
-import com.soa.models.HumanBeing;
-import com.soa.util.FieldValidationUtil;
+import com.pff.secondservice.dto.HumanBeingDTO;
+import com.pff.secondservice.exception.BadRequestException;
+import com.pff.secondservice.models.HumanBeing;
+import com.pff.secondservice.utils.FieldValidationUtil;
 
-import javax.ws.rs.BadRequestException;
 import java.util.ArrayList;
 import java.util.List;
 
