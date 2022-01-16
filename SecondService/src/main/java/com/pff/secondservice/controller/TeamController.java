@@ -2,7 +2,8 @@ package com.pff.secondservice.controller;
 
 import com.pff.secondservice.exception.BadRequestException;
 import com.pff.secondservice.exception.NotFoundException;
-import com.pff.secondservice.service.HeroesService;
+import com.pff.secondservice.models.Team;
+import com.pff.secondservice.service.TeamService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,16 +15,17 @@ import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
+import java.util.List;
 
 @RestController
-@RequestMapping(value = "/heroes", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/heroes/team", produces = MediaType.APPLICATION_JSON_VALUE)
 @Validated
 @CrossOrigin
-public class HeroesController {
-    private final HeroesService heroesService;
+public class TeamController {
+    private final TeamService teamService;
 
-    public HeroesController(HeroesService heroesService){
-        this.heroesService = heroesService;
+    public TeamController(TeamService teamService){
+        this.teamService = teamService;
     }
 
     @GetMapping("/hello")
@@ -31,15 +33,40 @@ public class HeroesController {
         return "Hello from Spring Boot";
     }
 
-    @PostMapping("/team/{team-id}/remove-without-toothpick")
+    @GetMapping
+    List<Team> getTeams(){
+        return teamService.getTeams();
+    }
+
+    @GetMapping("/{id}")
+    Team getTeam(@PathVariable Long id){
+        return teamService.getTeam(id);
+    }
+
+    @PostMapping
+    Team createTeam(@RequestBody Team team){
+        return teamService.createTeam(team);
+    }
+
+    @PutMapping("/{id}")
+    Team updateTeam(@RequestBody Team team, @PathVariable Long id){
+        return teamService.updateTeam(id, team);
+    }
+
+    @DeleteMapping("/{id}")
+    void deleteTeam(@PathVariable Long id){
+        teamService.deleteTeam(id);
+    }
+
+    @PostMapping("/{team-id}/remove-without-toothpick")
     public ResponseEntity<?> removeWithoutToothpick(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-        heroesService.removeWithoutToothpick(teamId);
+        teamService.removeWithoutToothpick(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @PostMapping("/team/{team-id}/make-depressive")
+    @PostMapping("/{team-id}/make-depressive")
     public ResponseEntity<?> makeDepressive(@PathVariable("team-id") Integer teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
-        heroesService.makeDepressive(teamId);
+        teamService.makeDepressive(teamId);
         return new ResponseEntity(HttpStatus.OK);
     }
 
@@ -53,6 +80,7 @@ public class HeroesController {
 
     @ExceptionHandler(NotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
+
     public ResponseEntity<String> handleNotFoundException(NotFoundException e){
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)

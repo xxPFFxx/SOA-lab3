@@ -9,13 +9,11 @@ import com.soa.dto.HumanBeingDTO;
 import com.soa.dto.PagedHumanBeingList;
 import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
-import com.soa.models.Team;
 
 import javax.persistence.NoResultException;
 import javax.ws.rs.BadRequestException;
 import javax.ws.rs.NotFoundException;
 import java.io.IOException;
-import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
@@ -42,16 +40,6 @@ public class HumanBeingService {
                     Optional<HumanBeing> humanBeing = humanBeingDAO.getHumanBeing(id);
                     humanBeingToUpdate.setCreationDate(humanBeing.get().getCreationDate());
                     humanBeingToUpdate.setId(id.longValue());
-                    List<Team> teams = teamDAO.findAll();
-                    Team teamToUpdate = null;
-                    for (Team team : teams){
-                        if (team.getName().equals(humanBeingToUpdate.getTeam().getName())){
-                            teamToUpdate = team;
-                        }
-                    }
-                    if (teamToUpdate != null){
-                        humanBeingToUpdate.setTeam(teamToUpdate);
-                    }
                     humanBeingDAO.updateHumanBeing(humanBeingToUpdate);
                 } catch (NumberFormatException e) {
                     throw new BadRequestException("Bad format of id: " + id + ", should be natural number (1,2,...)");
@@ -60,7 +48,7 @@ public class HumanBeingService {
                 }
             }
         }catch (JsonSyntaxException e){
-            throw new NotFoundException("Bad syntax of JSON body");
+            throw new BadRequestException("Bad syntax of JSON body");
         }
     }
 
@@ -68,16 +56,6 @@ public class HumanBeingService {
         try {
             HumanBeingDTO humanBeingDTO = gson.fromJson(humanBeing, HumanBeingDTO.class);
             HumanBeing humanBeingToPersist = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
-            List<Team> teams = teamDAO.findAll();
-            Team teamToUpdate = null;
-            for (Team team : teams){
-                if (team.getName().equals(humanBeingToPersist.getTeam().getName())){
-                    teamToUpdate = team;
-                }
-            }
-            if (teamToUpdate != null){
-                humanBeingToPersist.setTeam(teamToUpdate);
-            }
             humanBeingDAO.createHumanBeing(humanBeingToPersist);
         }catch (JsonSyntaxException e){
             throw new BadRequestException("Bad syntax of JSON body");

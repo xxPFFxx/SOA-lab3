@@ -27,6 +27,7 @@ public class HumanBeingController{
     @Produces(MediaType.APPLICATION_JSON)
     public HumanBeingDTOList getHumanBeings(@QueryParam("pageSize") String perPage, @QueryParam("pageNumber") String curPage,
                                @QueryParam("orderBy") String sortBy, @QueryParam("filterBy") String filterBy) throws IOException {
+        System.out.println("Hi dude");
         PagedHumanBeingList pagedHumanBeingList = humanBeingService.getHumanBeings(perPage, curPage, sortBy, filterBy);
         return new HumanBeingDTOList((humanBeingMapper.mapHumanBeingListToHumanBeingDTOList(pagedHumanBeingList.getHumanBeingList())), pagedHumanBeingList.getCount());
     }
