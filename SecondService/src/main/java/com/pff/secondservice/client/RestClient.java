@@ -31,6 +31,10 @@ public class RestClient {
         return restTemplateConfig.restTemplate().getForObject(REST_URI + pathToHumanBeings, HumanBeingDTOList.class);
     }
 
+    public HumanBeingDTO getHumanBeing(Long id) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        return  restTemplateConfig.restTemplate().getForObject(REST_URI + pathToHumanBeings + "/" + id, HumanBeingDTO.class);
+    }
+
     public void updateHumanBeing(HumanBeingDTO humanBeingDTO) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
         restTemplateConfig.restTemplate().put(REST_URI + pathToHumanBeings + "/" + humanBeingDTO.getId(), humanBeingDTO);
     }

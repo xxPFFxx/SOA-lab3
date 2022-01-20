@@ -14,22 +14,16 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "team")
+@Table(name = "humanbeingsinteam")
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id")
-public class Team {
+public class HumanBeingsInTeams {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long userId;
 
-    private String name;
-
-//    @OneToMany(mappedBy = "team", fetch = FetchType.EAGER, orphanRemoval=true)
-//    private List<HumanBeingsInTeams> humanBeingsInTeams;
-
-    public Team(String name){
-        this.name = name;
-    }
-
+//    @ManyToOne(optional = false, cascade =  CascadeType.ALL)
+//    @JoinColumn(name = "team_id")
+//    private Team team;
+    private Long teamId;
 }
