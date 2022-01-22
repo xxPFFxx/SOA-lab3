@@ -70,6 +70,11 @@ public class TeamController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
+    @PostMapping("/{team-id}/human-being/{human-being-id}")
+    void addHumanBeingToTeam(@PathVariable("team-id") Long teamId, @PathVariable("human-being-id") Long humanBeingId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        teamService.addHumanBeingToTeam(teamId, humanBeingId);
+    }
+
     @ExceptionHandler(BadRequestException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<String> handleBadRequestException(BadRequestException e){
@@ -86,4 +91,5 @@ public class TeamController {
                 .status(HttpStatus.NOT_FOUND)
                 .body(e.getMessage());
     }
+
 }

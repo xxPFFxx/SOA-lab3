@@ -9,21 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="Team in second service completely">
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/HumanBeingsInTeams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/HumanBeingsInTeamsRepository.java" afterDir="false" />
+    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="Does not access the database of the first service #4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/CarMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/CoordinatesMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/HumanBeingMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Coordinates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/HumanBeing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -1009,7 +1000,8 @@
       <workItem from="1642489926275" duration="593000" />
       <workItem from="1642525321622" duration="2936000" />
       <workItem from="1642595459141" duration="5963000" />
-      <workItem from="1642662951269" duration="7470000" />
+      <workItem from="1642662951269" duration="10788000" />
+      <workItem from="1642834418085" duration="2123000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1640262110804</created>
@@ -1123,7 +1115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642343392719</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Does not access the database of the first service #4">
+      <created>1642670633106</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1642670633106</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1157,7 +1156,8 @@
     <MESSAGE value="transfering Team to second service" />
     <MESSAGE value="transferring Team to second service" />
     <MESSAGE value="Team in second service completely" />
-    <option name="LAST_COMMIT_MESSAGE" value="Team in second service completely" />
+    <MESSAGE value="Does not access the database of the first service #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Does not access the database of the first service #4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -17,6 +17,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TeamService {
@@ -82,5 +83,28 @@ public class TeamService {
         teamRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("No team with id" + id));
         teamRepository.deleteById(id);
+    }
+
+    public void addHumanBeingToTeam(Long teamId, Long humanBeingId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {
+        Optional<HumanBeingsInTeams> humanBeingInTeam = humanBeingsInTeamsRepository.findById(humanBeingId);
+        try {
+            restClient.getHumanBeing(humanBeingId);
+        }
+        catch (Exception e){
+            throw new NotFoundException("No humanBeing with id " + humanBeingId);
+        }
+        Optional<Team> team = teamRepository.findById(teamId);
+        if (!team.isPresent()){
+            throw new NotFoundException("No team with id " + teamId);
+        }
+        if (humanBeingInTeam.isPresent()){
+            HumanBeingsInTeams humanBeingInTeamToUpdate = humanBeingInTeam.get();
+            humanBeingInTeamToUpdate.setTeamId(teamId);
+            humanBeingsInTeamsRepository.save(humanBeingInTeamToUpdate);
+        }
+        else {
+            humanBeingsInTeamsRepository.save(new HumanBeingsInTeams(humanBeingId, teamId));
+        }
+
     }
 }
