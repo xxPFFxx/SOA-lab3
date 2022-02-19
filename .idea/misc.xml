@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SecondService/pom.xml" />
         <option value="$PROJECT_DIR$/MainService/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejb/pom.xml" />
       </list>
     </option>
   </component>

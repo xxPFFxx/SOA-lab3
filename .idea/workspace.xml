@@ -2,29 +2,105 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SecondService:war" />
+      <artifact name="MainService:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="Does not access the database of the first service #4">
+    <list default="true" id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Ejb/Ejb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CarDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CoordinatesDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/ExceptionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/HumanBeingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/PagedHumanBeingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/enums/Mood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/enums/WeaponType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/exceptions/BadRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/exceptions/NotFoundMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/FieldValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/UrlParametersUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejb/src/main/webapp/glassfish-ejb-jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/EjbNotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/EjbNotAvailableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/RemoteBeanUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CarDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CoordinatesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CoordinatesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/ExceptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/ExceptionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/PagedHumanBeingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/PagedHumanBeingList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/Mood.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/Mood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/WeaponType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dao/HumanBeingDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/SecondServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/CarDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/CoordinatesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/CoordinatesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/ExceptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/ExceptionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/HumanBeingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/HumanBeingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/TeamDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/TeamDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/dtoList/HumanBeingDTOList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/enums/Mood.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/enums/Mood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/enums/WeaponType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/BadRequestAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/BadRequestAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/BadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/NotFoundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/NotFoundAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/TeamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/mapper/TeamMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/HumanBeingsInTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/models/HumanBeingsInTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/models/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/HumanBeingsInTeamsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/repository/HumanBeingsInTeamsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/repository/TeamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/FieldValidationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/FieldValidationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/test/java/com/pff/secondservice/SecondServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/test/java/com/soa/secondservice/SecondServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,14 +112,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -57,73 +125,46 @@
       <map>
         <entry key="JPA Inspector" value="true" />
         <entry key="JPA Palette" value="false" />
-        <entry key="JPA Structure" value="false" />
+        <entry key="JPA Structure" value="true" />
       </map>
     </option>
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="ProjectId" id="22flDdSARmyphv1BhKmIHYUHaiW" />
+  <component name="ProjectId" id="25BiHUKPGnewZEQVNctYPuAX7xZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejb/src/main/resources" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.34207076" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.side.proportion" value="0.152439" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\mapper" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\SecondService\src\main\java\com\pff\secondservice\models" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp\resources" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2\MainService\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab2" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\resources" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\mapper" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\enums" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\dto" />
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.pff.secondservice.mapper" />
-      <recent name="com.pff.secondservice.utils" />
-      <recent name="com.pff.secondservice.dto" />
+      <recent name="com.pff.services" />
+      <recent name="com.pff.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecondServiceApplication">
-    <configuration name="Payara" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.2021.10" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="https://localhost:51510/MainService/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+  <component name="RunManager" selected="GlassFish Server.GlassFish 5.2021.10">
+    <configuration name="GlassFish 5.2021.10" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.2021.10" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SecondService-0.0.1-SNAPSHOT/SecondService-0.0.1-SNAPSHOT" />
       <deployment>
-        <artifact name="MainService:war">
+        <artifact name="SecondService:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -139,990 +180,51 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="MainService:war" />
+          <artifact name="SecondService:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="Jetty 9.4.44.v20210927" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.4.44.v20210927" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="https://localhost:51510/MainService/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="MainService:war">
-          <settings DEPLOYMENT_METHOD="contexts" />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <data>
-          <option name="baseDirectoryName" value="6e8385ed-6369-4b91-95f5-adc398f005bf" />
-          <option name="configFiles">
-            <list>
-              <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\acceptratelimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\alpn.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\apache-jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\apache-jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\bytebufferpool.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi-decorate.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi-spi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\connectionlimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\conscrypt.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\console-capture.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\customrequestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debuglog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\decorate.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\flight-recorder.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gcloud-datastore.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gcloud.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\global-webapp-common.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gzip.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http-forwarded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http2c.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\inetaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-embedded-query.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-remote-query.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jcl-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jdbc.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jul-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jul-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-api.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logback-access.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logback-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-jetty.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-jul.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-logback.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\mail.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\openid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol-ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite-compactpath.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite-customizer.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-cache-hash.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-cache-null.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-cache.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-file.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-gcloud.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-jdbc.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-mongo.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\sessions.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-api.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-jul.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-logback.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-simple-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl-reload.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stop.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\threadlimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\threadpool.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\transactions.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-forwarded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http2c.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-secure.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
-              </JettyConfigFile>
-            </list>
-          </option>
-          <base-directory-name>6e8385ed-6369-4b91-95f5-adc398f005bf</base-directory-name>
-          <option name="myConfigFiles">
-            <list>
-              <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\acceptratelimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\alpn.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\apache-jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\apache-jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\bytebufferpool.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi-decorate.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi-spi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\connectionlimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\conscrypt.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\console-capture.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\customrequestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debuglog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\decorate.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\flight-recorder.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gcloud-datastore.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gcloud.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\global-webapp-common.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\gzip.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http-forwarded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http2c.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\inetaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-embedded-query.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-remote-query.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\infinispan-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jcl-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jdbc.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jul-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jul-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-api.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\log4j2-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logback-access.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logback-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-jetty.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-jul.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-logback.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging-slf4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\mail.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\openid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol-ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite-compactpath.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite-customizer.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-cache-hash.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-cache-null.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-cache.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-file.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-gcloud.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-jdbc.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\session-store-mongo.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\sessions.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-api.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-jul.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j2.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-logback.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\slf4j-simple-impl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl-reload.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stop.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\threadlimit.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\threadpool.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\transactions.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-forwarded.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http2c.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-secure.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\unixsocket.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
-              </JettyConfigFile>
-            </list>
-          </option>
-        </data>
-      </server-settings>
-      <predefined_log_file enabled="true" id="Jetty" />
-      <ConfigurationWrapper VM_VAR="" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SecondService" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="MainService:war" />
-        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SecondService" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SecondServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SecondService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pff.secondservice.SecondServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soa.secondservice.SecondServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="GlassFish Server.Payara" />
-      <item itemvalue="Jetty Server.Jetty 9.4.44.v20210927" />
-      <item itemvalue="Spring Boot.SecondServiceApplication" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringBootOptions">
-    <option name="showAdditionalConfigNotification" value="false" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a24795bf-83b7-4218-b62a-41eeb8ff72a8" name="Changes" comment="" />
-      <created>1640236405729</created>
+      <changelist id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="" />
+      <created>1645006795163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640236405729</updated>
-      <workItem from="1640236406885" duration="27049000" />
-      <workItem from="1640431031205" duration="8842000" />
-      <workItem from="1640498213118" duration="19372000" />
-      <workItem from="1640545268184" duration="251000" />
-      <workItem from="1640582995942" duration="18058000" />
-      <workItem from="1640753521994" duration="411000" />
-      <workItem from="1641316880525" duration="1000" />
-      <workItem from="1641537791719" duration="2423000" />
-      <workItem from="1641542543090" duration="9905000" />
-      <workItem from="1641563443679" duration="18423000" />
-      <workItem from="1641625338754" duration="4594000" />
-      <workItem from="1641638806149" duration="10499000" />
-      <workItem from="1641826682157" duration="623000" />
-      <workItem from="1641999813855" duration="2354000" />
-      <workItem from="1642077850959" duration="9916000" />
-      <workItem from="1642138027751" duration="14810000" />
-      <workItem from="1642233696884" duration="960000" />
-      <workItem from="1642234910580" duration="5855000" />
-      <workItem from="1642315243149" duration="20191000" />
-      <workItem from="1642489926275" duration="593000" />
-      <workItem from="1642525321622" duration="2936000" />
-      <workItem from="1642595459141" duration="5963000" />
-      <workItem from="1642662951269" duration="10788000" />
-      <workItem from="1642834418085" duration="2123000" />
+      <updated>1645006795163</updated>
+      <workItem from="1645006796285" duration="990000" />
+      <workItem from="1645008605089" duration="1594000" />
+      <workItem from="1645013413738" duration="734000" />
+      <workItem from="1645078768122" duration="11178000" />
+      <workItem from="1645095092233" duration="611000" />
+      <workItem from="1645182401103" duration="31000" />
+      <workItem from="1645270250250" duration="6033000" />
+      <workItem from="1645282886167" duration="3709000" />
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1640262110804</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640262110804</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Second Service">
-      <created>1640439806831</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640439806831</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Second Service works with https">
-      <created>1641539046825</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1641539046825</updated>
-    </task>
-    <task id="LOCAL-00004" summary="/team/{team-id}/remove-without-toothpick works correctly">
-      <created>1641553669358</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1641553669358</updated>
-    </task>
-    <task id="LOCAL-00005" summary="small fixes">
-      <created>1641564523425</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1641564523425</updated>
-    </task>
-    <task id="LOCAL-00006" summary="All methods from React works correctly">
-      <created>1641580106614</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1641580106614</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Moved jks variables to application.properties">
-      <created>1641648093662</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1641648093662</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added report">
-      <created>1641651230451</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1641651230451</updated>
-    </task>
-    <task id="LOCAL-00009" summary="small fixes">
-      <created>1641655000143</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1641655000143</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed creating multiple teams with the same name">
-      <created>1642083623894</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1642083623894</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fixed issue #1">
-      <created>1642139168938</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1642139168938</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fixed issue #3">
-      <created>1642142319917</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1642142319917</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fixed issue #2">
-      <created>1642149758390</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1642149758390</updated>
-    </task>
-    <task id="LOCAL-00014" summary="small fixes">
-      <created>1642168094175</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1642168094175</updated>
-    </task>
-    <task id="LOCAL-00015" summary="transferring Team to second service">
-      <created>1642334133219</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1642334133219</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Team in second service completely">
-      <created>1642343392719</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1642343392719</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Does not access the database of the first service #4">
-      <created>1642670633106</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1642670633106</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1139,28 +241,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Second Service" />
-    <MESSAGE value="Second Service works with https" />
-    <MESSAGE value="/team/{team-id}/remove-without-toothpick works correctly" />
-    <MESSAGE value="All methods from React works correctly" />
-    <MESSAGE value="Moved jks variables to application.properties" />
-    <MESSAGE value="added report" />
-    <MESSAGE value="Fixed creating multiple teams with the same name" />
-    <MESSAGE value="Fixed issue #1" />
-    <MESSAGE value="Fixed issue #3" />
-    <MESSAGE value="Fixed issue #2" />
-    <MESSAGE value="small fixes" />
-    <MESSAGE value="transfering Team to second service" />
-    <MESSAGE value="transferring Team to second service" />
-    <MESSAGE value="Team in second service completely" />
-    <MESSAGE value="Does not access the database of the first service #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Does not access the database of the first service #4" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

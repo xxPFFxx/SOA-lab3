@@ -6,7 +6,9 @@ import com.soa.dto.dtoList.HumanBeingDTOList;
 import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 import com.soa.services.HumanBeingService;
+import com.soa.services.HumanBeingServiceInterface;
 import com.soa.util.FieldValidationUtil;
+import com.soa.util.RemoteBeanUtil;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -15,12 +17,12 @@ import java.io.IOException;
 
 @Path("human-beings")
 public class HumanBeingController{
-    private final HumanBeingService humanBeingService;
+    private final HumanBeingServiceInterface humanBeingServiceInterface;
     private final HumanBeingMapper humanBeingMapper;
 
     public HumanBeingController(){
         humanBeingMapper = new HumanBeingMapper();
-        humanBeingService = new HumanBeingService();
+        humanBeingServiceInterface = RemoteBeanUtil.lookupRemoteStatelessBean();
     }
 
     @GET
@@ -28,7 +30,7 @@ public class HumanBeingController{
     public HumanBeingDTOList getHumanBeings(@QueryParam("pageSize") String perPage, @QueryParam("pageNumber") String curPage,
                                @QueryParam("orderBy") String sortBy, @QueryParam("filterBy") String filterBy) throws IOException {
         System.out.println("Hi dude");
-        PagedHumanBeingList pagedHumanBeingList = humanBeingService.getHumanBeings(perPage, curPage, sortBy, filterBy);
+        PagedHumanBeingList pagedHumanBeingList = humanBeingServiceInterface.getHumanBeings(perPage, curPage, sortBy, filterBy);
         return new HumanBeingDTOList((humanBeingMapper.mapHumanBeingListToHumanBeingDTOList(pagedHumanBeingList.getHumanBeingList())), pagedHumanBeingList.getCount());
     }
 
@@ -40,7 +42,7 @@ public class HumanBeingController{
         if (long_id == null){
             throw new BadRequestException("id can't be null for PUT request");
         }
-        HumanBeing humanBeing = humanBeingService.getHumanBeing(long_id);
+        HumanBeing humanBeing = humanBeingServiceInterface.getHumanBeing(long_id);
         return humanBeingMapper.mapHumanBeingToHumanBeingDTO(humanBeing);
     }
 
@@ -48,7 +50,7 @@ public class HumanBeingController{
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response createHumanBeing(String humanBeing) throws IOException {
-        humanBeingService.saveHumanBeing(humanBeing);
+        humanBeingServiceInterface.saveHumanBeing(humanBeing);
         return Response.ok().build();
     }
 
@@ -61,7 +63,7 @@ public class HumanBeingController{
         if (long_id == null){
             throw new BadRequestException("id can't be null for PUT request");
         }
-        humanBeingService.updateHumanBeing(humanBeing, long_id);
+        humanBeingServiceInterface.updateHumanBeing(humanBeing, long_id);
         return Response.ok().build();
     }
 
@@ -72,7 +74,7 @@ public class HumanBeingController{
         if (long_id == null){
             throw new BadRequestException("id can't be null for PUT request");
         }
-        humanBeingService.deleteHumanBeing(long_id);
+        humanBeingServiceInterface.deleteHumanBeing(long_id);
     }
 
     @OPTIONS

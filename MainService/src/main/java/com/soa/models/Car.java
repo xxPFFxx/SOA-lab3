@@ -3,6 +3,7 @@ package com.soa.models;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @AllArgsConstructor
@@ -11,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "car")
 @Setter
-public class Car {
+public class Car implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
