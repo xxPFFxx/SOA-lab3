@@ -15,8 +15,6 @@ import java.util.Properties;
 
 public class RemoteBeanUtil {
     public static HumanBeingServiceInterface lookupRemoteStatelessBean() {
-//        Hashtable<String, String> jndiProperties = new Hashtable<>();
-//        jndiProperties.put(javax.naming.Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
         Properties contextProperties = new Properties();
         contextProperties.setProperty(
                 Context.INITIAL_CONTEXT_FACTORY,

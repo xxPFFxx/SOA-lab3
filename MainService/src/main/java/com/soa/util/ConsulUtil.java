@@ -17,11 +17,11 @@ import java.util.Properties;
 @Singleton
 @Startup
 public class ConsulUtil {
-    private AgentClient agentClient = null;
-    private String service_id = "1";
-    private Integer port = 51510;
-    private String name = null;
-    private Long ttl = 3L;
+    private AgentClient agentClient;
+    private String service_id;
+    private Integer port;
+    private String name;
+    private Long ttl;
 
     @PostConstruct
     public void register() {
