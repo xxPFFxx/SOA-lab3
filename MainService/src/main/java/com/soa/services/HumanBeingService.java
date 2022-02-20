@@ -6,12 +6,12 @@ import com.google.gson.JsonSyntaxException;
 import com.soa.dao.HumanBeingDAO;
 import com.soa.dto.HumanBeingDTO;
 import com.soa.dto.PagedHumanBeingList;
+import com.soa.exceptions.BadRequestException;
+import com.soa.exceptions.NotFoundException;
 import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 
 import javax.persistence.NoResultException;
-import javax.ws.rs.BadRequestException;
-import javax.ws.rs.NotFoundException;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -28,7 +28,7 @@ public class HumanBeingService {
         humanBeingMapper = new HumanBeingMapper();
     }
 
-    public void updateHumanBeing(String humanBeingRequest, Long id) throws IOException {
+    public void updateHumanBeing(String humanBeingRequest, Long id) throws IOException, BadRequestException, NotFoundException {
         try {
             if (id != null) {
                 try {
@@ -49,7 +49,7 @@ public class HumanBeingService {
         }
     }
 
-    public void saveHumanBeing(String humanBeing){
+    public void saveHumanBeing(String humanBeing) throws BadRequestException {
         try {
             HumanBeingDTO humanBeingDTO = gson.fromJson(humanBeing, HumanBeingDTO.class);
             HumanBeing humanBeingToPersist = humanBeingMapper.mapHumanBeingDTOToHumanBeing(humanBeingDTO);
@@ -59,7 +59,7 @@ public class HumanBeingService {
         }
     }
 
-    public void deleteHumanBeing(Long id) throws IOException {
+    public void deleteHumanBeing(Long id) throws IOException, BadRequestException, NotFoundException {
         try {
             HumanBeing humanBeing = (humanBeingDAO.getHumanBeing(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
             humanBeingDAO.deleteHumanBeing(id);
@@ -71,12 +71,12 @@ public class HumanBeingService {
         }
     }
 
-    public PagedHumanBeingList getHumanBeings(String perPage, String curPage, String sortBy, String filterBy) throws IOException {
+    public PagedHumanBeingList getHumanBeings(String perPage, String curPage, String sortBy, String filterBy) throws IOException, BadRequestException {
         PagedHumanBeingList pagedHumanBeingList = humanBeingDAO.findAll(perPage, curPage, sortBy, filterBy);
         return pagedHumanBeingList;
     }
 
-    public HumanBeing getHumanBeing(Long id){
+    public HumanBeing getHumanBeing(Long id) throws NotFoundException {
         try {
             return (humanBeingDAO.getHumanBeing(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
         }catch (NoResultException e){

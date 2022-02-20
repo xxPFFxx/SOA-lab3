@@ -9,9 +9,12 @@ import com.soa.dto.HumanBeingDTO;
 import com.soa.dto.PagedHumanBeingList;
 import com.soa.dto.dtoList.HumanBeingDTOList;
 import com.soa.enums.WeaponType;
+import com.soa.exceptions.BadRequestException;
+import com.soa.exceptions.NotFoundException;
 import com.soa.mapper.HumanBeingMapper;
 import com.soa.models.HumanBeing;
 import com.soa.util.HibernateUtil;
+import lombok.SneakyThrows;
 import org.hibernate.Session;
 
 import javax.ejb.Stateless;
@@ -20,8 +23,6 @@ import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
-import javax.ws.rs.BadRequestException;
-import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -45,7 +46,8 @@ public class HumanBeingService implements HumanBeingServiceInterface {
 
     }
 
-    public void updateHumanBeing(String humanBeingRequest, Long id){
+    @SneakyThrows
+    public void updateHumanBeing(String humanBeingRequest, Long id) {
         try {
             if (id != null) {
                 try {
@@ -66,6 +68,7 @@ public class HumanBeingService implements HumanBeingServiceInterface {
         }
     }
 
+    @SneakyThrows
     public void saveHumanBeing(String humanBeing){
         try {
             HumanBeingDTO humanBeingDTO = gson.fromJson(humanBeing, HumanBeingDTO.class);
@@ -76,6 +79,7 @@ public class HumanBeingService implements HumanBeingServiceInterface {
         }
     }
 
+    @SneakyThrows
     public void deleteHumanBeing(Long id){
         try {
             HumanBeing humanBeing = (humanBeingDAO.getHumanBeing(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));
@@ -88,6 +92,7 @@ public class HumanBeingService implements HumanBeingServiceInterface {
         }
     }
 
+    @SneakyThrows
     @Override
     public Response additionalTasks(String weaponTypeCount, String weaponTypeArray, String uniqueImpactSpeed) {
         CriteriaBuilder criteriaBuilder = em.getCriteriaBuilder();
@@ -136,6 +141,7 @@ public class HumanBeingService implements HumanBeingServiceInterface {
         return pagedHumanBeingList;
     }
 
+    @SneakyThrows
     public HumanBeing getHumanBeing(Long id){
         try {
             return (humanBeingDAO.getHumanBeing(id)).orElseThrow(() -> new NotFoundException("humanBeing with id = " + id + " does not exist"));

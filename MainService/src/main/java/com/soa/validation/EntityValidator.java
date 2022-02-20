@@ -1,5 +1,6 @@
 package com.soa.validation;
 
+import com.soa.exceptions.BadRequestException;
 import com.soa.models.Car;
 import com.soa.models.Coordinates;
 import com.soa.models.HumanBeing;
@@ -8,7 +9,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
-import javax.ws.rs.BadRequestException;
+
 import java.util.Set;
 
 public class EntityValidator {
@@ -27,21 +28,21 @@ public class EntityValidator {
         return errorMessage;
     }
 
-    public void validateCar(Car car){
+    public void validateCar(Car car) throws BadRequestException {
         Set<ConstraintViolation<Object>> constraintViolations = validator.validate(car);
         if (!constraintViolations.isEmpty())
             throw new BadRequestException(formExceptionMsg(constraintViolations));
 
     }
 
-    public void validateCoordinates(Coordinates coordinates) {
+    public void validateCoordinates(Coordinates coordinates) throws BadRequestException {
         Set<ConstraintViolation<Object>> constraintViolations = validator.validate(coordinates);
         if (!constraintViolations.isEmpty())
             throw new BadRequestException(formExceptionMsg(constraintViolations));
 
     }
 
-    public void validateHumanBeing(HumanBeing humanBeing) {
+    public void validateHumanBeing(HumanBeing humanBeing) throws BadRequestException {
         Set<ConstraintViolation<Object>> constraintViolations = validator.validate(humanBeing);
         if (!constraintViolations.isEmpty())
             throw new BadRequestException(formExceptionMsg(constraintViolations));

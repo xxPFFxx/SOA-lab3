@@ -31,11 +31,11 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     <error-page>
-        <exception-type>javax.ws.rs.NotFoundException</exception-type>
+        <exception-type>com.soa.exceptions.NotFoundException</exception-type>
         <location>/notFoundMapper</location>
     </error-page>
     <error-page>
-        <exception-type>javax.ws.rs.BadRequestException</exception-type>
+        <exception-type>com.soa.exceptions.BadRequestException</exception-type>
         <location>/BadRequestMapper</location>
     </error-page>
 </web-app>

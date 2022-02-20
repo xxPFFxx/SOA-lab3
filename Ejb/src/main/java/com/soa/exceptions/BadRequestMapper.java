@@ -2,7 +2,6 @@ package com.soa.exceptions;
 
 import com.soa.dto.ExceptionDTO;
 
-import javax.ws.rs.BadRequestException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

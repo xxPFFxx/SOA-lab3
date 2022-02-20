@@ -1,14 +1,15 @@
 package com.soa.mapper;
 
 import com.soa.dto.CoordinatesDTO;
+import com.soa.exceptions.BadRequestException;
 import com.soa.models.Coordinates;
 import com.soa.util.FieldValidationUtil;
 
-import javax.ws.rs.BadRequestException;
+
 
 public class CoordinatesMapper {
 
-    public Coordinates mapCoordinatesDTOToCoordinates(CoordinatesDTO coordinatesDTO) {
+    public Coordinates mapCoordinatesDTOToCoordinates(CoordinatesDTO coordinatesDTO) throws BadRequestException {
         try {
             Coordinates coordinates = new Coordinates();
             coordinates.setId(FieldValidationUtil.getLongFieldValue(coordinatesDTO.getId()));

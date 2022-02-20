@@ -1,10 +1,10 @@
 package com.soa.mapper;
 
 import com.soa.dto.HumanBeingDTO;
+import com.soa.exceptions.BadRequestException;
 import com.soa.models.HumanBeing;
 import com.soa.util.FieldValidationUtil;
 
-import javax.ws.rs.BadRequestException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class HumanBeingMapper {
         carMapper = new CarMapper();
     }
 
-    public HumanBeing mapHumanBeingDTOToHumanBeing(HumanBeingDTO humanBeingDTO) {
+    public HumanBeing mapHumanBeingDTOToHumanBeing(HumanBeingDTO humanBeingDTO) throws BadRequestException {
         try {
             HumanBeing humanBeing = new HumanBeing();
             humanBeing.setId(FieldValidationUtil.getLongFieldValue(humanBeingDTO.getId()));

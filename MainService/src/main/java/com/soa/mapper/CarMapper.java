@@ -1,13 +1,12 @@
 package com.soa.mapper;
 
 import com.soa.dto.CarDTO;
+import com.soa.exceptions.BadRequestException;
 import com.soa.models.Car;
 import com.soa.util.FieldValidationUtil;
 
-import javax.ws.rs.BadRequestException;
-
 public class CarMapper {
-    public Car mapCarDTOToCar(CarDTO carDTO) {
+    public Car mapCarDTOToCar(CarDTO carDTO) throws BadRequestException {
         try {
             Car car = new Car();
             car.setId(FieldValidationUtil.getLongFieldValue(carDTO.getId()));
