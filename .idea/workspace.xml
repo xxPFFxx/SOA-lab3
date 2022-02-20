@@ -2,100 +2,40 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="MainService:war exploded" />
+      <artifact name="SecondService:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Ejb/Ejb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CarDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CoordinatesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/CountDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/ExceptionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/HumanBeingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/PagedHumanBeingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/enums/Mood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/enums/WeaponType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/exceptions/BadRequestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/exceptions/NotFoundMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/FieldValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/UrlParametersUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/resources/META-INF/beans.xml" afterDir="false" />
+    <list default="true" id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="Ejb is working">
       <change afterPath="$PROJECT_DIR$/Ejb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejb/src/main/webapp/glassfish-ejb-jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/EjbNotAvailableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/EjbNotAvailableMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/RemoteBeanUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/ConsulUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/ConfigurationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondService/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MainService_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CarDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CoordinatesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CoordinatesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/CountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/ExceptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/ExceptionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/HumanBeingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/PagedHumanBeingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/PagedHumanBeingList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/Mood.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/Mood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/enums/WeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/CrudRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/repository/implementation/CrudRepositoryImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dao/HumanBeingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/Ejb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/Ejb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/enums/Mood.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/enums/Mood.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/enums/WeaponType.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/enums/WeaponType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/Coordinates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/repository/implementation/CrudRepositoryImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/enums/Mood.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/enums/Mood.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/enums/WeaponType.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/enums/WeaponType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/Coordinates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/SecondServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/SecondServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/controller/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/CarDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/CoordinatesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/CoordinatesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/ExceptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/ExceptionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/HumanBeingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/HumanBeingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/TeamDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/TeamDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/dto/dtoList/HumanBeingDTOList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/dto/dtoList/HumanBeingDTOList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/enums/Mood.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/enums/Mood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/enums/WeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/BadRequestAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/BadRequestAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/NotFoundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/NotFoundAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/mapper/TeamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/mapper/TeamMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/HumanBeingsInTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/models/HumanBeingsInTeams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/models/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/HumanBeingsInTeamsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/repository/HumanBeingsInTeamsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/repository/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/repository/TeamRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/service/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/FieldValidationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/FieldValidationUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/pff/secondservice/utils/SpringConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/SecondServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/SecondServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondService/src/test/java/com/pff/secondservice/SecondServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/test/java/com/soa/secondservice/SecondServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -145,6 +85,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.152439" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -223,8 +164,18 @@
       <workItem from="1645095092233" duration="611000" />
       <workItem from="1645182401103" duration="31000" />
       <workItem from="1645270250250" duration="6033000" />
-      <workItem from="1645282886167" duration="3709000" />
+      <workItem from="1645282886167" duration="4474000" />
+      <workItem from="1645290220058" duration="3328000" />
+      <workItem from="1645335511423" duration="3441000" />
     </task>
+    <task id="LOCAL-00001" summary="Ejb is working">
+      <created>1645286715667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645286715667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,5 +192,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ejb is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejb is working" />
   </component>
 </project>

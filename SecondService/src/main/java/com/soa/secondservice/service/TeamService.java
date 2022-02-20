@@ -8,6 +8,8 @@ import com.soa.secondservice.models.HumanBeingsInTeams;
 import com.soa.secondservice.models.Team;
 import com.soa.secondservice.repository.HumanBeingsInTeamsRepository;
 import com.soa.secondservice.repository.TeamRepository;
+import com.soa.secondservice.utils.ConfigurationUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -22,14 +24,17 @@ import java.util.Optional;
 @Service
 public class TeamService {
 
+
     private final RestClient restClient;
     private final TeamRepository teamRepository;
     private final HumanBeingsInTeamsRepository humanBeingsInTeamsRepository;
+    private final ConfigurationUtil configurationUtil;
 
-    public TeamService(RestClient restClient, TeamRepository teamRepository, HumanBeingsInTeamsRepository humanBeingsInTeamsRepository) {
+    public TeamService(RestClient restClient, TeamRepository teamRepository, HumanBeingsInTeamsRepository humanBeingsInTeamsRepository, ConfigurationUtil configurationUtil) {
         this.restClient = restClient;
         this.teamRepository = teamRepository;
         this.humanBeingsInTeamsRepository = humanBeingsInTeamsRepository;
+        this.configurationUtil = configurationUtil;
     }
 
     public void removeWithoutToothpick(Long teamId) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException, KeyManagementException {

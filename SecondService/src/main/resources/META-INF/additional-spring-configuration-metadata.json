@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "consul.main-app-name",
+      "type": "java.lang.String",
+      "description": "Description for consul.main-app-name."
+  }
+] }
