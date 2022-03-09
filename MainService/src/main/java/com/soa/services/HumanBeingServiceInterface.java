@@ -1,7 +1,6 @@
 package com.soa.services;
 
 import com.soa.dto.PagedHumanBeingList;
-import com.soa.exceptions.EjbNotAvailableException;
 import com.soa.models.HumanBeing;
 
 import javax.ejb.Remote;

@@ -3,6 +3,7 @@ package com.soa.dao;
 import com.soa.dto.PagedHumanBeingList;
 import com.soa.enums.Mood;
 import com.soa.enums.WeaponType;
+import com.soa.exceptions.BadRequestException;
 import com.soa.models.HumanBeing;
 import com.soa.util.HibernateUtil;
 import org.hibernate.Session;
@@ -10,7 +11,6 @@ import org.hibernate.Transaction;
 
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.*;
-import javax.ws.rs.BadRequestException;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -37,7 +37,7 @@ public class HumanBeingDAO implements Serializable {
         return Optional.ofNullable(humanBeing);
     }
 
-    public PagedHumanBeingList findAll(String perPage, String curPage, String sortBy, String filterBy) {
+    public PagedHumanBeingList findAll(String perPage, String curPage, String sortBy, String filterBy) throws BadRequestException {
 
         try(Session session = HibernateUtil.getSessionFactory().openSession()){
             CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
@@ -64,7 +64,7 @@ public class HumanBeingDAO implements Serializable {
 
     }
 
-    private List<HumanBeing> findAll(String perPage, String curPage, CriteriaQuery<HumanBeing> select, Session session) {
+    private List<HumanBeing> findAll(String perPage, String curPage, CriteriaQuery<HumanBeing> select, Session session) throws BadRequestException {
         try {
             if (perPage != null && curPage != null) {
 
@@ -101,7 +101,7 @@ public class HumanBeingDAO implements Serializable {
 
     private List<Order> getOrderList(String sortBy, CriteriaBuilder criteriaBuilder, Root<HumanBeing> from) {
         List<Order> orderList = new ArrayList();
-        if (sortBy != null) {
+        if (sortBy != null && !sortBy.isEmpty()) {
             List<String> criteria = new ArrayList<>(Arrays.asList(sortBy.split(";")));
             for (String criterion : criteria) {
                 boolean order = String.valueOf(criterion.charAt(0)).equals(" ");
@@ -200,7 +200,7 @@ public class HumanBeingDAO implements Serializable {
         return orderList;
     }
 
-    private ArrayList<Predicate> getPredicatesList(String filterBy, CriteriaBuilder criteriaBuilder, Root<HumanBeing> from) {
+    private ArrayList<Predicate> getPredicatesList(String filterBy, CriteriaBuilder criteriaBuilder, Root<HumanBeing> from) throws BadRequestException {
         try {
             ArrayList<Predicate> predicates = new ArrayList<>();
             if (filterBy != null && !filterBy.isEmpty()) {
@@ -270,7 +270,7 @@ public class HumanBeingDAO implements Serializable {
 
     }
 
-    public void updateHumanBeing(HumanBeing humanBeing) {
+    public void updateHumanBeing(HumanBeing humanBeing) throws BadRequestException {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()){
             transaction = session.beginTransaction();
@@ -288,7 +288,7 @@ public class HumanBeingDAO implements Serializable {
         }
     }
 
-    public long createHumanBeing(HumanBeing humanBeing){
+    public long createHumanBeing(HumanBeing humanBeing) throws BadRequestException {
         Transaction transaction = null;
         try(Session session = HibernateUtil.getSessionFactory().openSession()){
             transaction = session.beginTransaction();

@@ -9,20 +9,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="Added ejb exception handling">
+    <list default="true" id="393c62f7-9dd5-41a1-98f2-2c927b231f77" name="Changes" comment="Added report">
       <change afterPath="$PROJECT_DIR$/Ejb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingWebServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/MyBadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/MyNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/exceptions/ServiceFault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/LocalDateTimeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/MainMethodBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dao/HumanBeingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/dao/HumanBeingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CoordinatesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/HumanBeingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/FieldValidationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ejb/src/main/java/com/soa/util/FieldValidationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/AdditionalTasksController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/controllers/HumanBeingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/dao/HumanBeingDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CarMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/CoordinatesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/mapper/HumanBeingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/models/HumanBeing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/services/HumanBeingServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/ConsulUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/ConsulUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/RemoteBeanUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/RemoteBeanUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/FieldValidationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/util/FieldValidationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/java/com/soa/validation/EntityValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/java/com/soa/validation/EntityValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/CarMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/CoordinatesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/CoordinatesMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/models/HumanBeing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/services/HumanBeingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/util/FieldValidationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/com/soa/util/FieldValidationUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/MainService/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/controllers/HumanBeingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/CarMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/CoordinatesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/CoordinatesMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/mapper/HumanBeingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/models/HumanBeing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/services/HumanBeingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainService/target/classes/com/soa/util/FieldValidationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/com/soa/util/FieldValidationUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MainService/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/client/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/SpringConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/java/com/soa/secondservice/utils/SpringConfigurationProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SecondService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,32 +103,52 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejb/src/main/resources" />
+    <property name="last_opened_file_path" value="E:/RCA_RELEASE2/RCA" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.152439" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\resources" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\mapper" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\enums" />
       <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\dto" />
-      <recent name="C:\Users\Daniil\IdeaProjects\SOA-lab3\Ejb\src\main\java\com\pff\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.pff.services" />
       <recent name="com.pff.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.2021.10">
+  <component name="RunManager" selected="Spring Boot.SecondServiceApplication">
+    <configuration name="HumanBeingServicePublisher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soa.services.HumanBeingServicePublisher" />
+      <module name="MainService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soa.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GlassFish 5.2021.10" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.2021.10" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SecondService-0.0.1-SNAPSHOT/SecondService-0.0.1-SNAPSHOT" />
       <deployment>
@@ -103,6 +168,51 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -130,6 +240,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HumanBeingServicePublisher" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -149,6 +264,19 @@
       <workItem from="1645282886167" duration="4474000" />
       <workItem from="1645290220058" duration="3328000" />
       <workItem from="1645335511423" duration="8465000" />
+      <workItem from="1645364094740" duration="59000" />
+      <workItem from="1645373409418" duration="79000" />
+      <workItem from="1645794150099" duration="2788000" />
+      <workItem from="1645867426743" duration="1258000" />
+      <workItem from="1646031674492" duration="25000" />
+      <workItem from="1646462731861" duration="4863000" />
+      <workItem from="1646487003612" duration="31000" />
+      <workItem from="1646645870195" duration="944000" />
+      <workItem from="1646647074243" duration="16558000" />
+      <workItem from="1646721086623" duration="12234000" />
+      <workItem from="1646750251917" duration="8882000" />
+      <workItem from="1646805043611" duration="1732000" />
+      <workItem from="1646807656248" duration="25578000" />
     </task>
     <task id="LOCAL-00001" summary="Ejb is working">
       <created>1645286715667</created>
@@ -171,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645344006718</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added report">
+      <created>1645364144135</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645364144135</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +328,11 @@
     <MESSAGE value="Ejb is working" />
     <MESSAGE value="Consul is working" />
     <MESSAGE value="Added ejb exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ejb exception handling" />
+    <MESSAGE value="Added report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added report" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

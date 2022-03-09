@@ -14,4 +14,5 @@ public class SpringConfigurationProperties {
     private String customTrustStore;
     private String customTrustStorePassword;
     private String apiServiceUrl;
+    private String muleServiceApi;
 }

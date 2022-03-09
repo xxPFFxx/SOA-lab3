@@ -31,7 +31,7 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     <error-page>
-        <exception-type>com.soa.exceptions.NotFoundException</exception-type>
+        <exception-type>com.soa.exceptions.BadRequestException</exception-type>
         <location>/notFoundMapper</location>
     </error-page>
     <error-page>

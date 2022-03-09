@@ -136,7 +136,7 @@ public class HumanBeingService implements HumanBeingServiceInterface {
         return Response.ok().build();
     }
 
-    public PagedHumanBeingList getHumanBeings(String perPage, String curPage, String sortBy, String filterBy) {
+    public PagedHumanBeingList getHumanBeings(String perPage, String curPage, String sortBy, String filterBy) throws com.soa.exceptions.BadRequestException {
         PagedHumanBeingList pagedHumanBeingList = humanBeingDAO.findAll(perPage, curPage, sortBy, filterBy);
         return pagedHumanBeingList;
     }

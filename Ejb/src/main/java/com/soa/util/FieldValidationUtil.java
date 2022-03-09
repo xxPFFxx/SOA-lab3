@@ -2,12 +2,11 @@ package com.soa.util;
 
 import com.soa.enums.Mood;
 import com.soa.enums.WeaponType;
-
-import javax.ws.rs.BadRequestException;
+import com.soa.exceptions.BadRequestException;
 
 public class FieldValidationUtil {
 
-    public static Integer getIntegerFieldValue(String value) {
+    public static Integer getIntegerFieldValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -17,7 +16,7 @@ public class FieldValidationUtil {
         }
     }
 
-    public static Double getDoubleFieldValue(String value) {
+    public static Double getDoubleFieldValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -27,7 +26,7 @@ public class FieldValidationUtil {
         }
     }
 
-    public static Float getFloatFieldValue(String value) {
+    public static Float getFloatFieldValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -37,7 +36,7 @@ public class FieldValidationUtil {
         }
     }
 
-    public static Long getLongFieldValue(String value) {
+    public static Long getLongFieldValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -47,7 +46,7 @@ public class FieldValidationUtil {
         }
     }
 
-    public static Boolean getBooleanFieldValue(String value) {
+    public static Boolean getBooleanFieldValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -63,7 +62,7 @@ public class FieldValidationUtil {
         return value;
     }
 
-    public static Mood getMoodValue(String value) {
+    public static Mood getMoodValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {
@@ -73,7 +72,7 @@ public class FieldValidationUtil {
         }
     }
 
-    public static WeaponType getWeaponTypeValue(String value) {
+    public static WeaponType getWeaponTypeValue(String value) throws BadRequestException {
         if (isEmptyOrNull(value))
             return null;
         try {

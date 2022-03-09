@@ -2,6 +2,7 @@ package com.soa.models;
 
 import com.soa.enums.Mood;
 import com.soa.enums.WeaponType;
+import com.soa.util.LocalDateTimeAdapter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 

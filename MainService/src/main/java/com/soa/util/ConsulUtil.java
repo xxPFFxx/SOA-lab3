@@ -10,7 +10,6 @@ import javax.annotation.PostConstruct;
 import javax.ejb.Schedule;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -52,4 +51,9 @@ public class ConsulUtil {
     public void checkIn() throws NotRegisteredException {
         agentClient.pass(service_id);
     }
+
+//    @PreDestroy
+//    public void deregister(){
+//        agentClient.deregister(service_id);
+//    }
 }
